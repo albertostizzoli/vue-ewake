@@ -35,8 +35,9 @@
             <h3>Diamo <i class="coursive">nuova carica</i> a progetti di <span class="highlight">comunicazione digitale</span></h3>
             <span><button>Scopri i servizi</button></span>
         </div>
+        <img src="/img/curve 1.png" alt="curve">
     </div>
-        <!--<img src="/img/curve 1.png" alt="curve">-->
+        
         
 </template>
 
@@ -150,7 +151,6 @@ export default {
 
 .services{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
