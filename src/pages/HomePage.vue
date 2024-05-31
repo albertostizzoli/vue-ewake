@@ -3,6 +3,9 @@
         <h2>Siamo una <strong>Fabbrica di Creatività Digitale</strong> <i class="coursive">indipendente</i> e <span class="highlight">made in Italy</span>, guidata e vissuta da imprenditori e
             professionisti del digitale.</h2>
     </div>
+    <div class="image mt-5">
+        <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
+    </div>
 </template>
 
 <script>
@@ -24,5 +27,9 @@ export default {
     span{
         color: rgb(90, 239,116);
     }
+}
+
+.image img{
+    width: 100%;
 }
 </style>
