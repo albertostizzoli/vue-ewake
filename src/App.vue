@@ -1,5 +1,9 @@
 <template>
 <HeaderSection></HeaderSection>
+<main>
+  <router-view></router-view>
+</main>
+
 
 </template>
 
