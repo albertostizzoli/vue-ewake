@@ -21,6 +21,11 @@
             <span><button><i class="fa-solid fa-phone "></i></button></span>
         </div>
     </div>
+    <div class="projects">
+        <h5>PROGETTI SELEZIONATI</h5>
+        <img class="pt-5 w-100" src="/img/Frame 1.png" alt="Projects">
+    </div>
+
 </template>
 
 <script>
@@ -32,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-    max-width: 600px;
+    max-width: 600px !important;
     color: white;
 
     .coursive {
@@ -94,8 +99,9 @@ export default {
     align-items: center;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 100px;
     
 
     .paragraph {
@@ -115,5 +121,13 @@ export default {
         }
     }
 
+}
+
+.projects{
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
+    border-bottom: 1px solid grey;
 }
 </style>
