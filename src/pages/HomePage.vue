@@ -94,6 +94,8 @@ export default {
     align-items: center;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
+    margin-left: 80px;
+    margin-right: 80px;
     
 
     .paragraph {
