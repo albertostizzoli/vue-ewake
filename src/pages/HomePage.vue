@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="paragraph">
-            <h3>Siamo un'<strong>agenzia creativa</strong> situata nella zona industriale di <i>Verona.</i></h3>
+            <h3>Siamo un'<strong>agenzia<br> creativa</strong> situata nella<br> zona industriale di<br> <i>Verona.</i></h3>
             <span><button>Contattaci</button></span>
             <span><button><i class="fa-solid fa-phone "></i></button></span>
         </div>
@@ -31,14 +31,14 @@
         <a class="text-white" href="#">Vedi tutti i progetti</a>
     </div>
     <!-- servizi -->
-    <div class="d-flex justify-content-around align-items-center text-white mt-5">
-            <h5>I NOSTRI SERVIZI</h5>
-            <h5>CI OCCUPIAMO DI</h5>
-        </div>
+    <div class="d-flex justify-content-around align-items-center text-start text-white mt-5">
+        <h5>I NOSTRI SERVIZI</h5>
+        <h5>CI OCCUPIAMO DI</h5>
+    </div>
     <div class="services">
         <div class="paragraph">
-            <h3>Diamo <i class="coursive">nuova carica</i> a progetti di <span class="highlight">comunicazione
-                    digitale</span></h3>
+            <h3>Diamo <i class="coursive">nuova carica<br></i> a progetti di<br> <span class="highlight">comunicazione<br>
+                    digitale.</span></h3>
             <span><button>Scopri i servizi</button></span>
         </div>
         <img src="/img/curve 1.png" alt="curve">
@@ -58,6 +58,17 @@
             </ul>
         </div>
     </div>
+    <!-- siamo fatti così-->
+    <h5>SIAMO FATTI COSI'</h5>
+    <div class="explain">
+        <div class="paragraph">
+            <h3>Rigorosi, ambiziosi,<br> affidabili, trasparenti, e <br>sinceri.<strong> Costruiamo<br> dall'inizio alla fine i<br>
+                    nostri prodotti,<br></strong> ottimizzando i processi<br> e incrementando le<br> performance</h3>
+            <span><button>Scopri chi siamo</button></span>
+        </div>
+        <img class="black-white" src="/img/Group 26.png" alt="team">
+    </div>
+
 
 
 </template>
@@ -70,7 +81,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 /* ----- INTESTAZIONE ----- */
 .container {
     max-width: 600px !important;
@@ -136,8 +146,8 @@ export default {
     align-items: center;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
     padding-bottom: 100px;
 
 
@@ -160,11 +170,11 @@ export default {
 
 }
 
-/*----- PROJECTS ----- */
+/*----- PROGETTI ----- */
 .projects {
     margin-top: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
     padding-bottom: 80px;
     color: white;
     border-bottom: 1px solid grey;
@@ -180,19 +190,21 @@ export default {
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
     border-bottom: 1px solid grey;
 
     .paragraph {
         color: white;
         text-align: center;
-        display:flex;
+        display: flex;
         flex-direction: column;
 
-        h5 {
-            font-weight: 200;
+        h3 {
+            font-size: 30px;
+            text-align: center;
         }
+
 
         .coursive {
             font-weight: 100;
@@ -211,8 +223,44 @@ export default {
 
         ul li {
             list-style-type: none;
-            padding: 19px;
+            padding: 16px;
         }
     }
+}
+
+/*---- SIAMO FATTI COSI'---- */
+
+h5 {
+    text-align: left;
+    color: white;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.explain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-bottom: 1px solid grey;
+    color: white;
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 20px;
+}
+
+.paragraph span button {
+    background-color: rgb(107, 106, 106);
+    color: white;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.black-white {
+    filter: grayscale(100%);
 }
 </style>
