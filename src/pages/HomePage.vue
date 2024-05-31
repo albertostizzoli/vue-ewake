@@ -58,6 +58,7 @@
                 <li>Websites & Apps</li>
                 <li>Production</li>
             </ul>
+            <!--<img class="image" src="/img/Group 22.png" alt="Barra">-->
         </div>
     </div>
     <!-- siamo fatti così-->
@@ -65,18 +66,39 @@
     <div class="explain">
         <div class="paragraph">
             <h3>Rigorosi, ambiziosi,<br> affidabili, trasparenti, e <br>sinceri.<strong> Costruiamo<br> dall'inizio alla
-                    fine i<br>
-                    nostri prodotti,<br></strong> ottimizzando i processi<br> e incrementando le<br> performance</h3>
+                    fine i<br> nostri prodotti,<br></strong> ottimizzando i processi<br> e incrementando le<br>
+                performance</h3>
             <span><button>Scopri chi siamo</button></span>
         </div>
         <img class="black-white" src="/img/Group 26.png" alt="team">
     </div>
     <!-- clienti -->
-    
     <h5>CREDONO IN NOI</h5>
     <div class="image-box">
         <img src="/img/Gif loghi 1.gif" alt="clienti">
     </div>
+    <!-- settori -->
+    <h5>I NOSTRI SETTORI</h5>
+    <div class="sector">
+        <ul>
+            <li>Strategia</li>
+            <li>Creatività e design</li>
+            <li>Produzione</li>
+            <li>Media & Performance</li>
+        </ul>
+        <div>
+            <p>Analisi interna, Analisi contestuale,<br>Definizione di obiettivi S.M.A.R.T. e<br>attuazione operativa:
+                questo è l'abbici di<br>
+                una strategia vera "a prova di mercato". In altre parole facciamo le giuste<br>domande e interroghiamo
+                il mercato<br>prima e solo
+                quando abbiamo le risposte <br> stabiliamo cosa fare e come muoverci.</p>
+            <a href="#">Leggi tutto</a>
+        </div>
+    </div>
+
+
+
+
 
 </template>
 
@@ -201,9 +223,9 @@ export default {
     margin-right: 80px;
     border-bottom: 1px solid grey;
 
-    .image{
-            height: 725px;
-        }
+    .image {
+        height: 725px;
+    }
 
     .paragraph {
         color: white;
@@ -285,14 +307,50 @@ h5 {
 }
 
 .image-box {
-            display: flex;
-            justify-content: center;
-            margin: 0 100px;
-            padding-top: 20px;
-        }
+    display: flex;
+    justify-content: center;
+    margin: 0 100px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid grey;
+}
 
-        .image-box img {
-            max-width: 100%;
-            height: auto; 
-        }
+.image-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---- SETTORI ---- */
+
+h5 {
+    text-align: left;
+    color: white;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.sector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid grey;
+    color: white;
+
+    ul li {
+        list-style-type: none;
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+    
+    a{
+        color: white;
+    }
+}
 </style>
