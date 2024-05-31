@@ -8,6 +8,19 @@
         <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
     </div>
     <h2 class="motto">PENSA, CREA. SVEGLIA</h2>
+    <div class="marca">
+        <div class="image-container">
+            <img src="/img/10.png" alt="10">
+            <div class="text-overlay">Raccontiamo <i class="coursive">la marca</i> <span class="highlight">da 10
+                    anni</span>
+            </div>
+        </div>
+        <div class="paragraph">
+            <h3>Siamo un'<strong>agenzia creativa</strong> situata nella zona industriale di <i>Verona.</i></h3>
+            <span><button>Contattaci</button></span>
+            <span><button><i class="fa-solid fa-phone "></i></button></span>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -19,7 +32,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-    max-width: 600px !important;
+    max-width: 600px;
     color: white;
 
     .coursive {
@@ -42,5 +55,63 @@ export default {
     color: white;
     font-weight: 300;
     margin-top: 200px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 70px;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: black;
+
+    .coursive {
+        font-weight: 100;
+    }
+
+    .highlight {
+        color: rgb(90, 239, 116);
+    }
+}
+
+.marca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    
+
+    .paragraph {
+        color: white;
+        margin-top: 70px;
+        margin-left: 70px;
+        text-align: center;
+
+        span button {
+            margin-left: 10px;
+        }
+
+        button{
+            background-color: rgb(90, 239, 116); 
+            padding: 10px;
+            border-radius: 20px;
+        }
+    }
+
 }
 </style>
