@@ -1,11 +1,14 @@
 <template>
-<h1 class="text-center bg-danger">Hello world</h1>
-<i class="fa-brands fa-github fa-3x"></i>
+<HeaderSection></HeaderSection>
 
 </template>
 
 <script>
+import HeaderSection from './components/HeaderSection.vue';
   export default {
+    components: {
+      HeaderSection,
+    }
     
   }
 </script>
