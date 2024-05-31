@@ -1,4 +1,5 @@
 <template>
+    <!-- intestazione -->
     <div class="container pt-5 mt-2">
         <h2>Siamo una <strong>Fabbrica di Creatività Digitale</strong> <i class="coursive">indipendente</i> e <span
                 class="highlight">made in Italy</span>, guidata e vissuta da imprenditori e
@@ -7,6 +8,7 @@
     <div class="image">
         <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
     </div>
+    <!-- motto -->
     <h2 class="motto">PENSA, CREA. SVEGLIA</h2>
     <!-- marca -->
     <div class="marca">
@@ -29,16 +31,35 @@
         <a class="text-white" href="#">Vedi tutti i progetti</a>
     </div>
     <!-- servizi -->
+    <div class="d-flex justify-content-around align-items-center text-white mt-5">
+            <h5>I NOSTRI SERVIZI</h5>
+            <h5>CI OCCUPIAMO DI</h5>
+        </div>
     <div class="services">
-        <h5>I NOSTRI SERVIZI</h5>
-        <div class="paragraph mt-2">
-            <h3>Diamo <i class="coursive">nuova carica</i> a progetti di <span class="highlight">comunicazione digitale</span></h3>
+        <div class="paragraph">
+            <h3>Diamo <i class="coursive">nuova carica</i> a progetti di <span class="highlight">comunicazione
+                    digitale</span></h3>
             <span><button>Scopri i servizi</button></span>
         </div>
         <img src="/img/curve 1.png" alt="curve">
+        <div class="paragraph mt-2">
+            <ul>
+                <li>Strategy & Innovation</li>
+                <li>Branding</li>
+                <li>Creativity & Design</li>
+                <li>Mindset & Experience</li>
+                <li>Performance optimization</li>
+                <li>Advertising</li>
+                <li>Digital Experience</li>
+                <li>Social Media Management</li>
+                <li>Creators</li>
+                <li>Websites & Apps</li>
+                <li>Production</li>
+            </ul>
+        </div>
     </div>
-        
-        
+
+
 </template>
 
 <script>
@@ -49,6 +70,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+/* ----- INTESTAZIONE ----- */
 .container {
     max-width: 600px !important;
     color: white;
@@ -106,6 +129,7 @@ export default {
     }
 }
 
+/*---- MARCA ----- */
 .marca {
     display: flex;
     justify-content: space-between;
@@ -115,7 +139,7 @@ export default {
     margin-left: 100px;
     margin-right: 100px;
     padding-bottom: 100px;
-    
+
 
     .paragraph {
         color: white;
@@ -127,8 +151,8 @@ export default {
             margin-left: 10px;
         }
 
-        button{
-            background-color: rgb(90, 239, 116); 
+        button {
+            background-color: rgb(90, 239, 116);
             padding: 10px;
             border-radius: 20px;
         }
@@ -136,7 +160,8 @@ export default {
 
 }
 
-.projects{
+/*----- PROJECTS ----- */
+.projects {
     margin-top: 60px;
     margin-left: 100px;
     margin-right: 100px;
@@ -144,12 +169,13 @@ export default {
     color: white;
     border-bottom: 1px solid grey;
 
-    h5{
+    h5 {
         font-weight: 200;
     }
 }
 
-.services{
+/*----- SERVIZI ----- */
+.services {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -157,25 +183,36 @@ export default {
     margin-left: 100px;
     margin-right: 100px;
     border-bottom: 1px solid grey;
-    color: white;
 
-    h5{
-        font-weight: 200;
-    }
-
-    .coursive{
-        font-weight: 100;
-    }
-
-    .highlight{
-        color: rgb(90, 239, 116);
-    }
-
-    span button{
-        background-color: grey;
+    .paragraph {
         color: white;
-        padding: 10px;
-        border-radius: 10px;
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+
+        h5 {
+            font-weight: 200;
+        }
+
+        .coursive {
+            font-weight: 100;
+        }
+
+        .highlight {
+            color: rgb(90, 239, 116);
+        }
+
+        span button {
+            background-color: rgb(107, 106, 106);
+            color: white;
+            padding: 12px;
+            border-radius: 20px;
+        }
+
+        ul li {
+            list-style-type: none;
+            padding: 19px;
+        }
     }
 }
 </style>
