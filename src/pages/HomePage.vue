@@ -8,6 +8,7 @@
         <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
     </div>
     <h2 class="motto">PENSA, CREA. SVEGLIA</h2>
+    <!-- marca -->
     <div class="marca">
         <div class="image-container">
             <img src="/img/10.png" alt="10">
@@ -21,12 +22,22 @@
             <span><button><i class="fa-solid fa-phone "></i></button></span>
         </div>
     </div>
+    <!-- progetti-->
     <div class="projects">
         <h5>PROGETTI SELEZIONATI</h5>
         <img class="pt-5 w-100 pb-4" src="/img/Frame 1.png" alt="Projects">
         <a class="text-white" href="#">Vedi tutti i progetti</a>
     </div>
-
+    <!-- servizi -->
+    <div class="services">
+        <h5>I NOSTRI SERVIZI</h5>
+        <div class="paragraph mt-2">
+            <h3>Diamo <i class="coursive">nuova carica</i> a progetti di <span class="highlight">comunicazione digitale</span></h3>
+            <span><button>Scopri i servizi</button></span>
+        </div>
+    </div>
+        <!--<img src="/img/curve 1.png" alt="curve">-->
+        
 </template>
 
 <script>
@@ -128,7 +139,43 @@ export default {
     margin-top: 60px;
     margin-left: 100px;
     margin-right: 100px;
+    padding-bottom: 80px;
     color: white;
     border-bottom: 1px solid grey;
+
+    h5{
+        font-weight: 200;
+    }
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-bottom: 1px solid grey;
+    color: white;
+
+    h5{
+        font-weight: 200;
+    }
+
+    .coursive{
+        font-weight: 100;
+    }
+
+    .highlight{
+        color: rgb(90, 239, 116);
+    }
+
+    span button{
+        background-color: grey;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
 }
 </style>
