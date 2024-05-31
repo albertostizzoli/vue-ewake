@@ -89,16 +89,21 @@
         <div>
             <p>Analisi interna, Analisi contestuale,<br>Definizione di obiettivi S.M.A.R.T. e<br>attuazione operativa:
                 questo è l'abbici di<br>
-                una strategia vera "a prova di mercato". In altre parole facciamo le giuste<br>domande e interroghiamo
+                una strategia vera "a prova di mercato".<br> In altre parole facciamo le giuste<br>domande e
+                interroghiamo
                 il mercato<br>prima e solo
                 quando abbiamo le risposte <br> stabiliamo cosa fare e come muoverci.</p>
-            <a href="#">Leggi tutto</a>
+            <a class="text-white" href="#">Leggi tutto</a>
         </div>
     </div>
-
-
-
-
+    <!-- brand -->
+    <div class="brand">
+        <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
+        <div class="overlay">
+            <h2>Creiamo qualcosa di <i class="coursive">unico</i><br> per il <strong>il tuo brand</strong></h2>
+            <button>Contattaci</button>
+        </div>
+    </div>
 
 </template>
 
@@ -348,9 +353,47 @@ h5 {
     p {
         font-size: 20px;
     }
-    
-    a{
-        color: white;
+}
+
+/*---- BRAND ----- */
+.brand {
+    position: relative;
+    background-color: rgb(90, 239, 116);
+    width: 100%;
+    margin: auto;
+}
+
+.brand img {
+    width: 100%;
+    filter: grayscale(100%);
+    opacity: 0.3;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: left;
+    font-weight: 200;
+
+    .coursive{
+        font-weight: 400;
+    }
+}
+
+.overlay button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+     &:hover{
+        color: rgb(90, 239, 116);
     }
 }
 </style>
