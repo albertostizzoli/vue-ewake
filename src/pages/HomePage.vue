@@ -23,7 +23,8 @@
     </div>
     <div class="projects">
         <h5>PROGETTI SELEZIONATI</h5>
-        <img class="pt-5 w-100" src="/img/Frame 1.png" alt="Projects">
+        <img class="pt-5 w-100 pb-4" src="/img/Frame 1.png" alt="Projects">
+        <a class="text-white" href="#">Vedi tutti i progetti</a>
     </div>
 
 </template>
