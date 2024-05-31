@@ -19,7 +19,8 @@
             </div>
         </div>
         <div class="paragraph">
-            <h3>Siamo un'<strong>agenzia<br> creativa</strong> situata nella<br> zona industriale di<br> <i>Verona.</i></h3>
+            <h3>Siamo un'<strong>agenzia<br> creativa</strong> situata nella<br> zona industriale di<br> <i>Verona.</i>
+            </h3>
             <span><button>Contattaci</button></span>
             <span><button><i class="fa-solid fa-phone "></i></button></span>
         </div>
@@ -37,11 +38,12 @@
     </div>
     <div class="services">
         <div class="paragraph">
-            <h3>Diamo <i class="coursive">nuova carica<br></i> a progetti di<br> <span class="highlight">comunicazione<br>
+            <h3>Diamo <i class="coursive">nuova carica<br></i> a progetti di<br> <span
+                    class="highlight">comunicazione<br>
                     digitale.</span></h3>
             <span><button>Scopri i servizi</button></span>
         </div>
-        <img src="/img/curve 1.png" alt="curve">
+        <img class="image" src="/img/curve 1.gif" alt="curve">
         <div class="paragraph mt-2">
             <ul>
                 <li>Strategy & Innovation</li>
@@ -62,14 +64,19 @@
     <h5>SIAMO FATTI COSI'</h5>
     <div class="explain">
         <div class="paragraph">
-            <h3>Rigorosi, ambiziosi,<br> affidabili, trasparenti, e <br>sinceri.<strong> Costruiamo<br> dall'inizio alla fine i<br>
+            <h3>Rigorosi, ambiziosi,<br> affidabili, trasparenti, e <br>sinceri.<strong> Costruiamo<br> dall'inizio alla
+                    fine i<br>
                     nostri prodotti,<br></strong> ottimizzando i processi<br> e incrementando le<br> performance</h3>
             <span><button>Scopri chi siamo</button></span>
         </div>
         <img class="black-white" src="/img/Group 26.png" alt="team">
     </div>
-
-
+    <!-- clienti -->
+    
+    <h5>CREDONO IN NOI</h5>
+    <div class="image-box">
+        <img src="/img/Gif loghi 1.gif" alt="clienti">
+    </div>
 
 </template>
 
@@ -194,6 +201,10 @@ export default {
     margin-right: 80px;
     border-bottom: 1px solid grey;
 
+    .image{
+            height: 725px;
+        }
+
     .paragraph {
         color: white;
         text-align: center;
@@ -204,7 +215,6 @@ export default {
             font-size: 30px;
             text-align: center;
         }
-
 
         .coursive {
             font-weight: 100;
@@ -223,7 +233,7 @@ export default {
 
         ul li {
             list-style-type: none;
-            padding: 16px;
+            padding: 18px;
         }
     }
 }
@@ -244,23 +254,45 @@ h5 {
     margin-top: 60px;
     margin-left: 80px;
     margin-right: 80px;
+    padding-bottom: 80px;
     border-bottom: 1px solid grey;
     color: white;
+
+    .paragraph {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .paragraph span button {
+        background-color: rgb(107, 106, 106);
+        color: white;
+        padding: 12px;
+        border-radius: 20px;
+    }
+
+    .black-white {
+        filter: grayscale(100%);
+    }
 }
 
-.paragraph {
-    text-align: center;
-    font-size: 20px;
-}
+/* ---- CLIENTI ----*/
 
-.paragraph span button {
-    background-color: rgb(107, 106, 106);
+h5 {
+    text-align: left;
     color: white;
-    padding: 12px;
-    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: 60px;
 }
 
-.black-white {
-    filter: grayscale(100%);
-}
+.image-box {
+            display: flex;
+            justify-content: center;
+            margin: 0 100px;
+            padding-top: 20px;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto; 
+        }
 </style>
