@@ -46,7 +46,8 @@
                     <br>base alla tua esigenza, dall'idea alla<br>
                     produzione finita. Formiamo un <br> team multidisciplinare di strateghi, <br> designer, analisti,
                     project manager, <br>
-                    sviluppatori ed esperti di contenuti<br> e social media.</h4>
+                    sviluppatori ed esperti di contenuti<br> e social media.
+                </h4>
             </div>
         </div>
     </div>
@@ -74,14 +75,18 @@
         <h2 class="text-start mt-1 display-1"><i>Non sai da<br>dove iniziare ?</i></h2>
         <div class="d-flex justify-content-between align-items-center">
             <div>
-                <h4 class="display-5 mt-5">Pianifichiamo e<br> personalizziamo il<br> percorso di crescita<br> del tuo brand.</h4>
+                <h4 class="display-5 mt-5">Pianifichiamo e<br> personalizziamo il<br> percorso di crescita<br> del tuo
+                    brand.</h4>
                 <span><button>Contattaci</button></span>
                 <span><button><i class="fa-solid fa-phone "></i></button></span>
             </div>
             <div>
-                <h5 class="paragraph">Quando scegliete di lavorare con noi, diventate <br>parte del nostro team. Coinvolgiamo tutti durante<br>
-                il processo, favorendo un ambiente in cui<br> convergono prospettive e talenti diversi. Insieme, <br>superiamo
-                i limiti, sfidiamo le norme e puntiamo<br> all'eccellenza in ogni progetto che <br> intraprendiamo</h5>
+                <h5 class="paragraph">Quando scegliete di lavorare con noi, diventate <br>parte del nostro team.
+                    Coinvolgiamo tutti durante<br>
+                    il processo, favorendo un ambiente in cui<br> convergono prospettive e talenti diversi. Insieme,
+                    <br>superiamo
+                    i limiti, sfidiamo le norme e puntiamo<br> all'eccellenza in ogni progetto che <br> intraprendiamo
+                </h5>
             </div>
         </div>
         <div class="d-flex justify-content-between align-items-center logo">
@@ -104,6 +109,27 @@
                     <li>Manutenzione e supporto</li>
                 </ul>
             </div>
+        </div>
+    </div>
+    <!-- team3 -->
+    <div class="team-third">
+        <h2 class="text-end mt-1 display-2"><i>Team compatto <br>e agile</i></h2>
+        <div class="d-flex mt-5">
+            <img src="/img/image 2.png" alt="emplyoyee">
+            <div>
+                <p class="text-white mt-2 ms-5">Uno degli aspetti più ottimali della nostra azienda è<br> la dimensione
+                    ottimale
+                    del nostro team. Abbiamo<br> capito che mantenere un team compatto ci<br> consente di ottenere i
+                    migliori risultati
+                    per i nostri<br> clienti e per noi stessi. Abbiamo una rete di<br> collaboratori con cui da anni
+                    garantiamo una <br>
+                    collaborazione efficiente, una comunicazione<br> aperta e un coordinamento con soluzione di<br>
+                    continuità.</p>
+                <button class="mt-3 ms-5">Entra nel team</button>
+            </div>
+        </div>
+        <div>
+            <img class="image" src="/img/2023_EWK_Agency_0259 1.png" alt="team">
         </div>
     </div>
 </template>
@@ -234,27 +260,27 @@ export default {
         margin-left: 5px;
         margin-top: 10px;
 
-        &:hover{
+        &:hover {
             background-color: white;
         }
     }
 
-    .paragraph{
+    .paragraph {
         font-size: 20px;
         margin-right: 100px;
     }
 
-    .logo{
+    .logo {
         position: relative;
 
-        img{
+        img {
             position: absolute;
             bottom: 0;
             left: 0;
         }
     }
 
-    ul li{
+    ul li {
         list-style-type: none;
         border-top: 1px solid grey;
         border-bottom: 1px solid grey;
@@ -263,6 +289,34 @@ export default {
         margin-right: 100px;
         display: flex;
         justify-content: space-between;
+    }
+}
+
+/*--- TEAM3 --- */
+.team-third {
+    margin-left: 70px;
+    padding-top: 130px;
+    color: white;
+    margin-right: 100px;
+
+    img {
+        filter: grayscale(100%);
+    }
+    
+    p{
+        font-size: 25px;
+    }
+
+    button {
+        background-color: rgb(107, 106, 106);
+        color: white;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .image {
+        filter: grayscale(100%);
+        margin-left: 550px;
     }
 }
 </style>
