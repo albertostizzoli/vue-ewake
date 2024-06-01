@@ -20,7 +20,7 @@
                     diversi. Insieme, <br>
                     superiamo i limiti, sfidiamo le norme e puntiamo<br> all'eccellenza in ogni progetto che<br>
                     intraprendiamo.</p>
-                    <button class="mt-2 ms-5">Scopri i servizi</button>
+                <button class="mt-2 ms-5">Scopri i servizi</button>
             </div>
         </div>
     </div>
@@ -33,16 +33,20 @@
     </div>
     <!-- spiegazioni -->
     <div class="explain">
-        <h3 class="text-start display-6 intro">Promuoviamo un ambiente in cui <i>incoraggiare le idee</i> e<br>celebrare i risultati. Coltiviamo
-        un'atmosfera di inclusività, in <br> cui tutti possono contribuire con i propri <i>unici punti di forza.</i></h3>
+        <h3 class="text-start display-6 intro">Promuoviamo un ambiente in cui <i>incoraggiare le idee</i> e<br>celebrare
+            i risultati. Coltiviamo
+            un'atmosfera di inclusività, in <br> cui tutti possono contribuire con i propri <i>unici punti di forza.</i>
+        </h3>
         <img class="image" src="/img/2023_EWK_Agency_0086 1.png" alt="developers">
         <div class="position-relative mt-5">
             <img src="/img/Group 28.png" alt="explain">
             <div class="overlay">
                 <h3 class="text-center">LA NOSTRA FORZA</h3>
-                <h4 class="text-center mt-5">Il nostro team può fornire un <br> ventaglio di soluzioni diverse in <br>base alla tua esigenza, dall'idea alla<br>
-                produzione finita. Formiamo un <br> team multidisciplinare di strateghi, <br> designer, analisti, project manager, <br>
-                sviluppatori ed esperti di contenuti<br> e social media.</h4>
+                <h4 class="text-center mt-5">Il nostro team può fornire un <br> ventaglio di soluzioni diverse in
+                    <br>base alla tua esigenza, dall'idea alla<br>
+                    produzione finita. Formiamo un <br> team multidisciplinare di strateghi, <br> designer, analisti,
+                    project manager, <br>
+                    sviluppatori ed esperti di contenuti<br> e social media.</h4>
             </div>
         </div>
     </div>
@@ -63,7 +67,44 @@
             <img src="/img/Group 5.png" alt="employee">
             <img src="/img/Group 6.png" alt="employee">
         </div>
-
+    </div>
+    <!-- kick off -->
+    <div class="kick-off">
+        <h5 class="text-start">KICK OFF</h5>
+        <h2 class="text-start mt-1 display-1"><i>Non sai da<br>dove iniziare ?</i></h2>
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h4 class="display-5 mt-5">Pianifichiamo e<br> personalizziamo il<br> percorso di crescita<br> del tuo brand.</h4>
+                <span><button>Contattaci</button></span>
+                <span><button><i class="fa-solid fa-phone "></i></button></span>
+            </div>
+            <div>
+                <h5 class="paragraph">Quando scegliete di lavorare con noi, diventate <br>parte del nostro team. Coinvolgiamo tutti durante<br>
+                il processo, favorendo un ambiente in cui<br> convergono prospettive e talenti diversi. Insieme, <br>superiamo
+                i limiti, sfidiamo le norme e puntiamo<br> all'eccellenza in ogni progetto che <br> intraprendiamo</h5>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center logo">
+            <div>
+                <img src="/img/Component 14.png" alt="logo">
+            </div>
+            <div>
+                <ul>
+                    <li>Analisi esigenze</li>
+                    <li>Ricerca e analisi di mercato</li>
+                    <li>Definizione degli obiettivi</li>
+                    <li>Creazione della strategia</li>
+                    <li>Pianificazione del budget</li>
+                    <li>Sviluppo del piano di comunicazione</li>
+                    <li>Creazione di contenuti</li>
+                    <li>Implementazione</li>
+                    <li>Monitoraggio e analisi</li>
+                    <li>Ottimizzazione</li>
+                    <li>Report e feedback</li>
+                    <li>Manutenzione e supporto</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -74,7 +115,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 /*---- CHI SIAMO---- */
 .together {
     position: relative;
@@ -106,14 +146,15 @@ export default {
         margin-left: 300px;
     }
 
-    .image-second{
+    .image-second {
         margin-left: 80px;
     }
+
     img {
         filter: grayscale(100%);
     }
 
-    button{
+    button {
         background-color: rgb(107, 106, 106);
         color: white;
         padding: 10px;
@@ -122,28 +163,28 @@ export default {
 }
 
 /*--- SIMBOLI --- */
-.symbols{
+.symbols {
     margin-top: 150px;
 
-    .icons{
+    .icons {
         margin-top: 80px;
     }
 }
 
 /*--- SPIEGAZIONI --- */
-.explain{
+.explain {
     margin-top: 100px;
     color: white;
 
-    .intro{
+    .intro {
         margin-left: 30px;
     }
 
-    i{
+    i {
         font-weight: 100;
     }
 
-    .image{
+    .image {
         filter: grayscale(100%);
         width: 95%;
         margin-top: 10px;
@@ -151,11 +192,11 @@ export default {
         margin-right: 30px;
     }
 
-    img{
+    img {
         width: 100%;
     }
 
-    .overlay{
+    .overlay {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -164,20 +205,64 @@ export default {
 }
 
 /*--- TEAM2 --- */
-.team-second{
+.team-second {
     background-color: white;
     padding-bottom: 110px;
-    
 
-    .image-second{
+
+    .image-second {
         filter: grayscale(100%);
         max-width: 1400px;
-        
-        img{
+
+        img {
             padding: 5px;
         }
     }
-
 }
 
+/*--- KICK OFF ---*/
+.kick-off {
+    margin-left: 70px;
+    padding-top: 90px;
+    color: white;
+
+    span button {
+        background-color: rgb(90, 239, 116);
+        color: black;
+        padding: 15px;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-top: 10px;
+
+        &:hover{
+            background-color: white;
+        }
+    }
+
+    .paragraph{
+        font-size: 20px;
+        margin-right: 100px;
+    }
+
+    .logo{
+        position: relative;
+
+        img{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    ul li{
+        list-style-type: none;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        padding: 10px;
+        font-size: 25px;
+        margin-right: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
 </style>
