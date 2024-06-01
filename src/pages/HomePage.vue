@@ -375,7 +375,7 @@ h5 {
 .overlay {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 20%;
     transform: translate(-50%, -50%);
     color: black;
     text-align: left;
