@@ -32,9 +32,9 @@
         <a class="text-white" href="#">Vedi tutti i progetti</a>
     </div>
     <!-- servizi -->
-    <div class="d-flex justify-content-around align-items-center text-start text-white mt-5">
-        <h5>I NOSTRI SERVIZI</h5>
-        <h5>CI OCCUPIAMO DI</h5>
+    <div class="d-flex justify-content-around align-items-center text-white mt-5">
+        <h5 class="text-center">I NOSTRI SERVIZI</h5>
+        <h5 class="text-center">CI OCCUPIAMO DI</h5>
     </div>
     <div class="services">
         <div class="paragraph">
@@ -68,7 +68,7 @@
             <h3>Rigorosi, ambiziosi,<br> affidabili, trasparenti, e <br>sinceri.<strong> Costruiamo<br> dall'inizio alla
                     fine i<br> nostri prodotti,<br></strong> ottimizzando i processi<br> e incrementando le<br>
                 performance</h3>
-            <span><button>Scopri chi siamo</button></span>
+            <router-link :to="{name: 'whoweare'}"><span><button>Scopri chi siamo</button></span></router-link>
         </div>
         <img class="black-white" src="/img/Group 26.png" alt="team">
     </div>
@@ -220,6 +220,7 @@ export default {
 }
 
 /*----- SERVIZI ----- */
+
 .services {
     display: flex;
     justify-content: space-between;
