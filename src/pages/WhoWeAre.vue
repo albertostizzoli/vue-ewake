@@ -33,7 +33,7 @@
     </div>
     <!-- spiegazioni -->
     <div class="explain">
-        <h3 class="text-start display-6">Promuoviamo un ambiente in cui <i>incoraggiare le idee</i> e<br>celebrare i risultati. Coltiviamo
+        <h3 class="text-start display-6 intro">Promuoviamo un ambiente in cui <i>incoraggiare le idee</i> e<br>celebrare i risultati. Coltiviamo
         un'atmosfera di inclusività, in <br> cui tutti possono contribuire con i propri <i>unici punti di forza.</i></h3>
         <img class="image" src="/img/2023_EWK_Agency_0086 1.png" alt="developers">
         <div class="position-relative mt-5">
@@ -43,9 +43,13 @@
                 <h4 class="text-center mt-5">Il nostro team può fornire un <br> ventaglio di soluzioni diverse in <br>base alla tua esigenza, dall'idea alla<br>
                 produzione finita. Formiamo un <br> team multidisciplinare di strateghi, <br> designer, analisti, project manager, <br>
                 sviluppatori ed esperti di contenuti<br> e social media.</h4>
-
             </div>
         </div>
+    </div>
+    <!-- team2 -->
+    <div class="team-second">
+        <h3 class="text-center pt-5 pb-5">TI PRESENTIAMO IL NOSTRO STRAORDINARIO TEAM</h3>
+
     </div>
 </template>
 
@@ -115,10 +119,11 @@ export default {
 /*--- SPIEGAZIONI --- */
 .explain{
     margin-top: 100px;
-    margin-left: 40px;
-    margin-right: 40px;
     color: white;
-    position: relative;
+
+    .intro{
+        margin-left: 30px;
+    }
 
     i{
         font-weight: 100;
@@ -126,8 +131,10 @@ export default {
 
     .image{
         filter: grayscale(100%);
-        width: 100%;
+        width: 95%;
         margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     img{
@@ -141,4 +148,11 @@ export default {
         transform: translate(-50%, -50%);
     }
 }
+
+/*--- TEAM2 --- */
+.team-second{
+    background-color: white;
+
+}
+
 </style>
