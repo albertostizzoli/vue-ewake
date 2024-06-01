@@ -3,7 +3,7 @@
     <div class="together">
         <img src="/img/Mask group.png" alt="logo">
         <div class="overlay">
-            <h6 class="text-start">CHI SIAMO</h6>
+            <h5 class="text-start">CHI SIAMO</h5>
             <h1 class="display-1"><i>Insieme facciamo<br> grandi cose</i></h1>
         </div>
     </div>
@@ -27,6 +27,9 @@
     <!-- simboli -->
     <div class="symbols">
         <h3 class="text-white text-center display-5">3 simboli per spiegare il nostro mantra:</h3>
+        <div class="text-center icons">
+            <img src="/img/Icone Hover.png" alt="icone">
+        </div>
     </div>
 </template>
 
@@ -80,7 +83,7 @@ export default {
         background-color: rgb(107, 106, 106);
         color: white;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 15px;
     }
 }
 
@@ -88,5 +91,8 @@ export default {
 .symbols{
     margin-top: 150px;
 
+    .icons{
+        margin-top: 80px;
+    }
 }
 </style>
