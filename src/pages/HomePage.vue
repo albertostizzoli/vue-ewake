@@ -9,12 +9,12 @@
         <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
     </div>
     <!-- motto -->
-    <h2 class="motto">PENSA, CREA. SVEGLIA</h2>
+    <h2 class="motto">CREA. SVEGLIA, PENSA</h2>
     <!-- marca -->
     <div class="marca">
         <div class="image-container">
             <img src="/img/10.png" alt="10">
-            <div class="text-overlay">Raccontiamo <i class="coursive">la marca</i> <span class="highlight">da 10
+            <div class="text-overlay">Raccontiamo<br> <i class="coursive">la marca</i><br> <span class="highlight">da 10
                     anni</span>
             </div>
         </div>
@@ -134,6 +134,8 @@ export default {
     margin-top: 100px;
 }
 
+/*---- MOTTO----- */
+
 .motto {
     text-align: center;
     font-size: 100px;
@@ -180,15 +182,14 @@ export default {
     align-items: center;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin: 0 auto;
     padding-bottom: 100px;
+    max-width: 1300px;
 
 
     .paragraph {
         color: white;
         margin-top: 70px;
-        margin-left: 70px;
         text-align: center;
 
         span button {
@@ -207,8 +208,8 @@ export default {
 /*----- PROGETTI ----- */
 .projects {
     margin-top: 60px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin: 0 auto;
+    max-width: 1300px;
     padding-bottom: 80px;
     color: white;
     border-bottom: 1px solid grey;
@@ -224,8 +225,8 @@ export default {
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin: 0 auto;
+    max-width: 1300px;
     border-bottom: 1px solid grey;
 
     .image {
@@ -279,8 +280,8 @@ h5 {
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin: 0 auto;
+    max-width: 1300px;
     padding-bottom: 80px;
     border-bottom: 1px solid grey;
     color: white;
@@ -339,8 +340,8 @@ h5 {
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin: 0 auto;
+    max-width: 1400px;
     padding-bottom: 80px;
     border-bottom: 1px solid grey;
     color: white;
