@@ -49,6 +49,20 @@
     <!-- team2 -->
     <div class="team-second">
         <h3 class="text-center pt-5 pb-5">TI PRESENTIAMO IL NOSTRO STRAORDINARIO TEAM</h3>
+        <div class="container-fluid d-flex flex-wrap image-second">
+            <img src="/img/Group 4.png" alt="employee">
+            <img src="/img/Group 5.png" alt="employee">
+            <img src="/img/Group 6.png" alt="employee">
+            <img src="/img/Group 7.png" alt="employee">
+            <img src="/img/Group 6.png" alt="employee">
+            <img src="/img/Group 7.png" alt="employee">
+            <img src="/img/Group 4.png" alt="employee">
+            <img src="/img/Group 5.png" alt="employee">
+            <img src="/img/Group 7.png" alt="employee">
+            <img src="/img/Group 4.png" alt="employee">
+            <img src="/img/Group 5.png" alt="employee">
+            <img src="/img/Group 6.png" alt="employee">
+        </div>
 
     </div>
 </template>
@@ -152,6 +166,17 @@ export default {
 /*--- TEAM2 --- */
 .team-second{
     background-color: white;
+    padding-bottom: 110px;
+    
+
+    .image-second{
+        filter: grayscale(100%);
+        max-width: 1400px;
+        
+        img{
+            padding: 5px;
+        }
+    }
 
 }
 
