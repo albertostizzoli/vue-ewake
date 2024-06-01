@@ -28,7 +28,23 @@
     <div class="symbols">
         <h3 class="text-white text-center display-5">3 simboli per spiegare il nostro mantra:</h3>
         <div class="text-center icons">
-            <img src="/img/Icone Hover.png" alt="icone">
+            <img src="/img/Icone Hover.png" alt="icons">
+        </div>
+    </div>
+    <!-- spiegazioni -->
+    <div class="explain">
+        <h3 class="text-start display-6">Promuoviamo un ambiente in cui <i>incoraggiare le idee</i> e<br>celebrare i risultati. Coltiviamo
+        un'atmosfera di inclusività, in <br> cui tutti possono contribuire con i propri <i>unici punti di forza.</i></h3>
+        <img class="image" src="/img/2023_EWK_Agency_0086 1.png" alt="developers">
+        <div class="position-relative mt-5">
+            <img src="/img/Group 28.png" alt="explain">
+            <div class="overlay">
+                <h3 class="text-center">LA NOSTRA FORZA</h3>
+                <h4 class="text-center mt-5">Il nostro team può fornire un <br> ventaglio di soluzioni diverse in <br>base alla tua esigenza, dall'idea alla<br>
+                produzione finita. Formiamo un <br> team multidisciplinare di strateghi, <br> designer, analisti, project manager, <br>
+                sviluppatori ed esperti di contenuti<br> e social media.</h4>
+
+            </div>
         </div>
     </div>
 </template>
@@ -93,6 +109,36 @@ export default {
 
     .icons{
         margin-top: 80px;
+    }
+}
+
+/*--- SPIEGAZIONI --- */
+.explain{
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: white;
+    position: relative;
+
+    i{
+        font-weight: 100;
+    }
+
+    .image{
+        filter: grayscale(100%);
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 </style>

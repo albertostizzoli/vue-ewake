@@ -8,8 +8,8 @@
     <div class="image">
         <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
     </div>
-    <!-- motto -->
-    <h2 class="motto">CREA. SVEGLIA, PENSA</h2>
+    <!-- mantra -->
+    <h2 class="mantra">CREA. SVEGLIA, PENSA</h2>
     <!-- marca -->
     <div class="marca">
         <div class="image-container">
@@ -134,9 +134,9 @@ export default {
     margin-top: 100px;
 }
 
-/*---- MOTTO----- */
+/*---- MANTRA----- */
 
-.motto {
+.mantra {
     text-align: center;
     font-size: 100px;
     color: white;
