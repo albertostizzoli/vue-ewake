@@ -3,7 +3,7 @@
         <div class="container pt-5">
             <div class="row">
                 <div class="col-12">
-                    <button><i class="fa-solid fa-bars p-1"></i>Menù</button>
+                    <router-link :to="{name: 'mainmenu'}"><button><i class="fa-solid fa-bars p-1"></i>Menù</button></router-link>
                 </div>
             </div>
         </div>

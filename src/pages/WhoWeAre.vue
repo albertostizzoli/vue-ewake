@@ -1,4 +1,5 @@
 <template>
+    <HeaderSection></HeaderSection>
     <!-- chi siamo -->
     <div class="together">
         <img src="/img/Mask group.png" alt="logo">
@@ -145,9 +146,11 @@
 </template>
 
 <script>
+import HeaderSection from '../components/HeaderSection.vue';
 import FooterSection from '../components/FooterSection.vue';
 export default {
     components: {
+        HeaderSection,
         FooterSection
     }
 

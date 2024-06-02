@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomePage from './pages/HomePage.vue';  
 import WhoWeAre from './pages/WhoWeAre.vue';
+import MainMenu from './pages/MainMenu.vue';
 
 // Definizione delle rotte
 const routes = [
@@ -13,6 +14,11 @@ const routes = [
         path: '/whoweare',
         name: 'whoweare',
         component: WhoWeAre
+    },
+    {
+        path: '/mainmenu',
+        name: 'mainmenu',
+        component: MainMenu
     },
 ];
 

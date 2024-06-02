@@ -1,5 +1,6 @@
 <template>
     <!-- intestazione -->
+    <HeaderSection></HeaderSection>
     <div class="container pt-5 mt-2">
         <h2>Siamo una <strong>Fabbrica di Creatività Digitale</strong> <i class="coursive">indipendente</i> e <span
                 class="highlight">made in Italy</span>, guidata e vissuta da imprenditori e
@@ -110,10 +111,12 @@
 </template>
 
 <script>
+import HeaderSection from '../components/HeaderSection.vue';
 import FooterSection from '../components/FooterSection.vue';
 export default {
     name: 'HomePage',
     components: {
+        HeaderSection,
         FooterSection
     }
 
