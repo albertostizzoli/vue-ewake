@@ -10,8 +10,8 @@
         <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
     </div>
     <!-- mantra -->
-    <h2 class="mantra">CREA. SVEGLIA, PENSA</h2>
-    <!-- marca -->
+    <!--<h2 class="mantra">CREA. SVEGLIA, PENSA</h2>-->
+    <CarouselWord></CarouselWord>
     <div class="marca">
         <div class="image-container">
             <img src="/img/10.png" alt="10">
@@ -112,11 +112,13 @@
 
 <script>
 import HeaderSection from '../components/HeaderSection.vue';
+import CarouselWord from '../components/CarouselWord.vue';
 import FooterSection from '../components/FooterSection.vue';
 export default {
     name: 'HomePage',
     components: {
         HeaderSection,
+        CarouselWord,
         FooterSection
     }
 
