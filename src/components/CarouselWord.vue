@@ -50,7 +50,7 @@ export default defineComponent({
 .carousel__item {
   min-height: 200px;
   width: 100%;
-  background-color: var(--vc-clr-primary);
+  background-color: rgb(12, 11, 11);
   color: var(--vc-clr-white);
   font-size: 100px;
   display: flex;

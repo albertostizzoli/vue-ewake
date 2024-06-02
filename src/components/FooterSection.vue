@@ -46,7 +46,7 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-    background-color: black;
+    background-color: rgb(12, 11, 11);
     padding-bottom: 20px;
 
     .contacts {
