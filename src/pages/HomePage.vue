@@ -29,7 +29,9 @@
     <!-- progetti-->
     <div class="projects">
         <h5>PROGETTI SELEZIONATI</h5>
-        <img class="pt-5 w-100 pb-4" src="/img/Frame 1.png" alt="Projects">
+        <div class="icon-container">
+            <img class="pt-5 w-100 pb-4 icon" src="/img/Frame 1.png" alt="Projects">
+        </div>
         <a class="text-white" href="#">Vedi tutti i progetti</a>
     </div>
     <!-- servizi -->
@@ -220,6 +222,7 @@ export default {
 
         span button {
             margin-left: 10px;
+            margin-right: 10px;
         }
 
         button {
@@ -227,11 +230,11 @@ export default {
             padding: 10px;
             border-radius: 20px;
 
-            &:hover{
+            &:hover {
                 background-color: white;
                 color: black;
                 transition: transform 0.3s ease-in-out;
-                transform: translateX(-20px);
+                transform: translateX(-20px)rotate(-15deg);
             }
         }
     }
@@ -250,6 +253,20 @@ export default {
     h5 {
         font-weight: 200;
     }
+
+    .icon-container {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .icon {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .icon-container:hover .icon {
+        transform: scale(1.1);
+    }
+
 }
 
 /*----- SERVIZI ----- */

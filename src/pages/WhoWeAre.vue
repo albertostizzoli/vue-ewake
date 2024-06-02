@@ -285,14 +285,15 @@ export default {
         color: black;
         padding: 15px;
         border-radius: 20px;
-        margin-left: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
         margin-top: 10px;
 
         &:hover {
             background-color: white;
             color: black;
             transition: transform 0.3s ease-in-out;
-            transform: translateX(-20px);
+            transform: translateX(-20px)rotate(-15deg);
         }
     }
 
