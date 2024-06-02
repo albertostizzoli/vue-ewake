@@ -136,7 +136,7 @@
     <div class="brand">
         <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
         <div class="up">
-            <h2>Creiamo qualcosa di <i class="coursive">unico</i><br> per il <strong>il tuo brand</strong></h2>
+            <h2 class="display-5">Creiamo qualcosa di <i class="coursive"><strong>unico</strong></i><br> per il <strong class="grass">il tuo brand</strong></h2>
             <button>Contattaci</button>
         </div>
     </div>
@@ -334,6 +334,7 @@ export default {
     background-color: rgb(90, 239, 116);
     width: 100%;
     margin: auto;
+    padding: 40px;
 }
 
 .brand img {
@@ -346,15 +347,21 @@ export default {
 .up {
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 30%;
     transform: translate(-50%, -50%);
     color: black;
     text-align: left;
     font-weight: 200;
 
     .coursive{
-        font-weight: 400;
+        font-weight: 300;
     }
+
+    .grass{
+        font-weight: 800;
+    }
+
+    
 }
 
 .up button {
