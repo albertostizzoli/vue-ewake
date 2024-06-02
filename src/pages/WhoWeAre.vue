@@ -96,18 +96,7 @@
             </div>
             <div>
                 <ul>
-                    <li>Analisi esigenze</li>
-                    <li>Ricerca e analisi di mercato</li>
-                    <li>Definizione degli obiettivi</li>
-                    <li>Creazione della strategia</li>
-                    <li>Pianificazione del budget</li>
-                    <li>Sviluppo del piano di comunicazione</li>
-                    <li>Creazione di contenuti</li>
-                    <li>Implementazione</li>
-                    <li>Monitoraggio e analisi</li>
-                    <li>Ottimizzazione</li>
-                    <li>Report e feedback</li>
-                    <li>Manutenzione e supporto</li>
+                    <li v-for="item in list">{{ item }}</li>
                 </ul>
             </div>
         </div>
@@ -152,6 +141,24 @@ export default {
     components: {
         HeaderSection,
         FooterSection
+    },
+    data(){
+        return{
+            list: [
+                'Analisi esigenze',
+                'Ricerca e analisi di mercato',
+                'Definizione degli obiettivi',
+                'Creazione della strategia',
+                'Pianificazione del budget',
+                'Sviluppo del piano di comunicazione',
+                'Creazione di contenuti',
+                'Implementazione',
+                'Monitoraggio e analisi',
+                'Ottimizzazione',
+                'Report e feedback',
+                'Manutenzione e supporto',
+            ],
+        }
     }
 
 }

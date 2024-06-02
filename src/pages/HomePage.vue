@@ -45,17 +45,7 @@
         <img class="image" src="/img/curve 1.gif" alt="curve">
         <div class="paragraph mt-2">
             <ul>
-                <li>Strategy & Innovation</li>
-                <li>Branding</li>
-                <li>Creativity & Design</li>
-                <li>Mindset & Experience</li>
-                <li>Performance optimization</li>
-                <li>Advertising</li>
-                <li>Digital Experience</li>
-                <li>Social Media Management</li>
-                <li>Creators</li>
-                <li>Websites & Apps</li>
-                <li>Production</li>
+                <li v-for="item in list">{{ item }}</li>
             </ul>
             <!--<img class="image" src="/img/Group 22.png" alt="Barra">-->
         </div>
@@ -80,10 +70,7 @@
     <h5>I NOSTRI SETTORI</h5>
     <div class="sector">
         <ul>
-            <li>Strategia</li>
-            <li>Creatività e design</li>
-            <li>Produzione</li>
-            <li>Media & Performance</li>
+            <li v-for="item in sector">{{ item }}</li>
         </ul>
         <div>
             <p>Analisi interna, Analisi contestuale,<br>Definizione di obiettivi S.M.A.R.T. e<br>attuazione operativa:
@@ -118,6 +105,29 @@ export default {
         HeaderSection,
         CarouselWord,
         FooterSection
+    },
+    data(){
+        return{
+            list: [
+                'Strategy & Innovation',
+                'Branding',
+                'Creativity & Design',
+                'Mindset & Experience',
+                'Performance optimization',
+                'Advertising',
+                'Digital Experience',
+                'Social Media Management',
+                'Creators',
+                'Websites & Apps',
+                'Production',
+            ],
+            sector: [
+                'Strategia',
+                'Creatività e design',
+                'Produzione',
+                'Media e Performance',
+            ],
+        }
     }
 
 }
