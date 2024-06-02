@@ -1,12 +1,7 @@
 <template>
-    <header>
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-12">
-                    <router-link :to="{name: 'mainmenu'}"><button><i class="fa-solid fa-bars p-2"></i>Menù</button></router-link>
-                </div>
-            </div>
-        </div>
+    <header class="pt-5 me-5">
+        <img class="logo" src="/img/Frame 19.png" alt="logo">
+        <router-link :to="{ name: 'mainmenu' }"><button><i class="fa-solid fa-bars p-2"></i>Menù</button></router-link>
     </header>
 </template>
 
@@ -17,11 +12,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
 
-    button {
-        background-color: rgb(64, 63, 63);
-        padding: 10px;
-        border-radius: 15px;
-        color: white;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        margin-left: 20px;
     }
+}
+
+button {
+    background-color: $secondary-color;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    margin-right: 20px;
+}
 </style>

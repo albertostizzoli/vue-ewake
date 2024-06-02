@@ -1,14 +1,8 @@
 <template>
     <!-- intestazione -->
-    <header>
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-12">
-                    <router-link :to="{ name: 'home' }"><button><i
-                                class="fa-solid fa-bars p-2"></i>Chiudi</button></router-link>
-                </div>
-            </div>
-        </div>
+    <header class="pt-5 me-5">
+        <img class="logo" src="/img/Frame 19.png" alt="logo">
+        <router-link :to="{ name: 'home' }"><button><i class="fa-solid fa-bars p-2"></i>Chiudi</button></router-link>
     </header>
     <!-- menu -->
     <div class="menu">
@@ -44,7 +38,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 @use '../assets/styles/partials/variables' as *;
 
 /*--- INTESTAZIONE --- */
@@ -53,11 +46,16 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    .logo{
+        margin-left: 20px;
+    }
+
     button {
         background-color: $secondary-color;
         padding: 10px;
         border-radius: 15px;
         color: white;
+        margin-right: 20px;
     }
 }
 
