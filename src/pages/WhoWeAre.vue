@@ -103,11 +103,11 @@
     </div>
     <!-- team3 -->
     <div class="team-third">
-        <h2 class="text-end mt-1 display-2"><i>Team compatto <br>e agile</i></h2>
+        <h2 class="text-end mt-1 display-2 me-5"><i>Team compatto <br>e agile</i></h2>
         <div class="d-flex mt-5">
             <img src="/img/image 2.png" alt="emplyoyee">
             <div>
-                <p class="text-white mt-2 ms-5">Uno degli aspetti più ottimali della nostra azienda è<br> la dimensione
+                <p class="text-white mt-2m ms-5">Uno degli aspetti più ottimali della nostra azienda è<br> la dimensione
                     ottimale
                     del nostro team. Abbiamo<br> capito che mantenere un team compatto ci<br> consente di ottenere i
                     migliori risultati
@@ -126,7 +126,8 @@
     <div class="brand">
         <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
         <div class="up">
-            <h2 class="display-5">Creiamo qualcosa di <i class="coursive"><strong>unico</strong></i><br> per il <strong class="grass">il tuo brand</strong></h2>
+            <h2 class="display-3">Creiamo qualcosa di <i class="coursive"><strong>unico</strong></i><br> per il <strong
+                    class="grass">il tuo brand</strong></h2>
             <button>Contattaci</button>
         </div>
     </div>
@@ -142,8 +143,8 @@ export default {
         HeaderSection,
         FooterSection
     },
-    data(){
-        return{
+    data() {
+        return {
             list: [
                 'Analisi esigenze',
                 'Ricerca e analisi di mercato',
@@ -165,7 +166,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 @use '../assets/styles/partials/variables' as *;
 
 /*---- CHI SIAMO---- */
@@ -194,6 +194,7 @@ export default {
 .team {
     margin-left: 70px;
     margin-top: 170px;
+    max-width: 1200px;
 
     .image {
         margin-left: 300px;
@@ -289,6 +290,9 @@ export default {
 
         &:hover {
             background-color: white;
+            color: black;
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(-20px);
         }
     }
 
@@ -329,8 +333,8 @@ export default {
     img {
         filter: grayscale(100%);
     }
-    
-    p{
+
+    p {
         font-size: 25px;
     }
 
@@ -366,21 +370,21 @@ export default {
 .up {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 35%;
     transform: translate(-50%, -50%);
     color: black;
     text-align: left;
     font-weight: 200;
 
-    .coursive{
+    .coursive {
         font-weight: 300;
     }
 
-    .grass{
+    .grass {
         font-weight: 800;
     }
 
-    
+
 }
 
 .up button {
@@ -391,7 +395,7 @@ export default {
     border-radius: 20px;
     cursor: pointer;
 
-     &:hover{
+    &:hover {
         color: $primary-color;
     }
 }

@@ -7,9 +7,11 @@
             professionisti del digitale.</h2>
     </div>
     <div class="image">
-        <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
+        <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake" class="image-bottom">
+        <img src="/img/Property 1=Variant2.png" alt="boschetti" class="image-top">
     </div>
-        <CarouselWord></CarouselWord>
+    <CarouselWord></CarouselWord>
+    <!-- marca -->
     <div class="marca">
         <div class="image-container">
             <img src="/img/10.png" alt="10">
@@ -31,9 +33,9 @@
         <a class="text-white" href="#">Vedi tutti i progetti</a>
     </div>
     <!-- servizi -->
-    <div class="d-flex justify-content-around align-items-center text-white mt-5">
-        <h5 class="text-center">I NOSTRI SERVIZI</h5>
-        <h5 class="text-center">CI OCCUPIAMO DI</h5>
+    <div class="d-flex justify-content-evenly align-items-center text-white mt-5">
+        <h5 class="text-start">I NOSTRI SERVIZI</h5>
+        <h5 class="text-start">CI OCCUPIAMO DI</h5>
     </div>
     <div class="services">
         <div class="paragraph">
@@ -47,8 +49,8 @@
             <ul>
                 <li v-for="item in list">{{ item }}</li>
             </ul>
-            <!--<img class="image" src="/img/Group 22.png" alt="Barra">-->
         </div>
+        <img class="image-2" src="/img/Group 22.png" alt="Barra">
     </div>
     <!-- siamo fatti così-->
     <h5>SIAMO FATTI COSI'</h5>
@@ -57,7 +59,7 @@
             <h3>Rigorosi, ambiziosi,<br> affidabili, trasparenti, e <br>sinceri.<strong> Costruiamo<br> dall'inizio alla
                     fine i<br> nostri prodotti,<br></strong> ottimizzando i processi<br> e incrementando le<br>
                 performance</h3>
-            <router-link :to="{name: 'whoweare'}"><span><button>Scopri chi siamo</button></span></router-link>
+            <router-link :to="{ name: 'whoweare' }"><span><button>Scopri chi siamo</button></span></router-link>
         </div>
         <img class="black-white" src="/img/Group 26.png" alt="team">
     </div>
@@ -86,7 +88,8 @@
     <div class="brand">
         <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
         <div class="overlay">
-            <h2 class="display-5">Creiamo qualcosa di <i class="coursive"><strong>unico</strong></i><br> per il <strong class="grass">il tuo brand</strong></h2>
+            <h2 class="display-3">Creiamo qualcosa di <i class="coursive"><strong>unico</strong></i><br> per il <strong
+                    class="grass">il tuo brand</strong></h2>
             <button>Contattaci</button>
         </div>
     </div>
@@ -106,8 +109,8 @@ export default {
         CarouselWord,
         FooterSection
     },
-    data(){
-        return{
+    data() {
+        return {
             list: [
                 'Strategy & Innovation',
                 'Branding',
@@ -134,7 +137,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 @use '../assets/styles/partials/variables' as *;
 
 /* ----- INTESTAZIONE ----- */
@@ -151,10 +153,21 @@ export default {
     }
 }
 
+
 .image img {
+    position: relative;
     width: 100%;
     margin-top: 100px;
     padding-bottom: 100px;
+    display: inline;
+
+    .image-top {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+    }
 }
 
 .image-container {
@@ -165,14 +178,14 @@ export default {
 
 .image-container img {
     display: block;
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
 .image-container .text-overlay {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 40px;
@@ -213,6 +226,13 @@ export default {
             background-color: $primary-color;
             padding: 10px;
             border-radius: 20px;
+
+            &:hover{
+                background-color: white;
+                color: black;
+                transition: transform 0.3s ease-in-out;
+                transform: translateX(-20px);
+            }
         }
     }
 
@@ -355,7 +375,7 @@ h5 {
     align-items: center;
     margin-top: 60px;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1200px;
     padding-bottom: 80px;
     border-bottom: 1px solid $secondary-color;
     color: white;
@@ -367,6 +387,10 @@ h5 {
 
     p {
         font-size: 20px;
+    }
+
+    .image-2 {
+        height: 100%
     }
 }
 
@@ -389,17 +413,17 @@ h5 {
 .overlay {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 35%;
     transform: translate(-50%, -50%);
     color: black;
     text-align: left;
     font-weight: 200;
 
-    .coursive{
+    .coursive {
         font-weight: 300;
     }
 
-    .grass{
+    .grass {
         font-weight: 800;
     }
 }
@@ -412,7 +436,7 @@ h5 {
     border-radius: 20px;
     cursor: pointer;
 
-     &:hover{
+    &:hover {
         color: $primary-color;
     }
 }
