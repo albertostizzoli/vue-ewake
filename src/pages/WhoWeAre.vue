@@ -140,10 +140,16 @@
             <button>Contattaci</button>
         </div>
     </div>
+    <!-- footer -->
+    <FooterSection></FooterSection>
 </template>
 
 <script>
+import FooterSection from '../components/FooterSection.vue';
 export default {
+    components: {
+        FooterSection
+    }
 
 }
 </script>
