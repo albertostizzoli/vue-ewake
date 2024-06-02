@@ -314,6 +314,10 @@ export default {
             list-style-type: none;
             padding: 18px;
         }
+
+        .image-2 {
+            height: 100%
+        }
     }
 }
 
@@ -392,7 +396,7 @@ h5 {
     align-items: center;
     margin-top: 60px;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     padding-bottom: 80px;
     border-bottom: 1px solid $secondary-color;
     color: white;
@@ -404,10 +408,6 @@ h5 {
 
     p {
         font-size: 20px;
-    }
-
-    .image-2 {
-        height: 100%
     }
 }
 
