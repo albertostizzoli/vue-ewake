@@ -124,6 +124,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@use '../assets/styles/partials/variables' as *;
+
 /* ----- INTESTAZIONE ----- */
 .container {
     max-width: 600px !important;
@@ -134,13 +137,14 @@ export default {
     }
 
     span {
-        color: rgb(90, 239, 116);
+        color: $primary-color;
     }
 }
 
 .image img {
     width: 100%;
     margin-top: 100px;
+    padding-bottom: 100px;
 }
 
 .image-container {
@@ -170,7 +174,7 @@ export default {
     }
 
     .highlight {
-        color: rgb(90, 239, 116);
+        color: $primary-color;
     }
 }
 
@@ -179,8 +183,8 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
+    border-top: 1px solid $secondary-color;
+    border-bottom: 1px solid $secondary-color;
     margin: 0 auto;
     padding-bottom: 100px;
     max-width: 1300px;
@@ -196,7 +200,7 @@ export default {
         }
 
         button {
-            background-color: rgb(90, 239, 116);
+            background-color: $primary-color;
             padding: 10px;
             border-radius: 20px;
         }
@@ -211,7 +215,7 @@ export default {
     max-width: 1300px;
     padding-bottom: 80px;
     color: white;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid $secondary-color;
 
     h5 {
         font-weight: 200;
@@ -227,7 +231,7 @@ export default {
     margin-top: 60px;
     margin: 0 auto;
     max-width: 1300px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid $secondary-color;
 
     .image {
         height: 725px;
@@ -249,11 +253,11 @@ export default {
         }
 
         .highlight {
-            color: rgb(90, 239, 116);
+            color: $primary-color;
         }
 
         span button {
-            background-color: rgb(107, 106, 106);
+            background-color: $secondary-color;
             color: white;
             padding: 12px;
             border-radius: 20px;
@@ -283,7 +287,7 @@ h5 {
     margin: 0 auto;
     max-width: 1300px;
     padding-bottom: 80px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid $secondary-color;
     color: white;
 
     .paragraph {
@@ -292,7 +296,7 @@ h5 {
     }
 
     .paragraph span button {
-        background-color: rgb(107, 106, 106);
+        background-color: $secondary-color;
         color: white;
         padding: 12px;
         border-radius: 20px;
@@ -318,7 +322,7 @@ h5 {
     margin: 0 100px;
     padding-top: 20px;
     padding-bottom: 30px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid $secondary-color;
 }
 
 .image-box img {
@@ -343,7 +347,7 @@ h5 {
     margin: 0 auto;
     max-width: 1400px;
     padding-bottom: 80px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid $secondary-color;
     color: white;
 
     ul li {
@@ -359,7 +363,7 @@ h5 {
 /*---- BRAND ----- */
 .brand {
     position: relative;
-    background-color: rgb(90, 239, 116);
+    background-color: $primary-color;
     width: 100%;
     margin: auto;
     padding: 40px;
@@ -399,7 +403,7 @@ h5 {
     cursor: pointer;
 
      &:hover{
-        color: rgb(90, 239, 116);
+        color: $primary-color;
     }
 }
 </style>

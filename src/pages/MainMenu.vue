@@ -44,6 +44,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@use '../assets/styles/partials/variables' as *;
+
 /*--- INTESTAZIONE --- */
 header {
     display: flex;
@@ -51,7 +54,7 @@ header {
     align-items: center;
 
     button {
-        background-color: rgb(64, 63, 63);
+        background-color: $secondary-color;
         padding: 10px;
         border-radius: 15px;
         color: white;
@@ -72,12 +75,12 @@ header {
     ul li {
         list-style-type: none;
         padding: 10px;
-        border-top: 1px solid grey;
-        border-bottom: 1px solid grey;
+        border-top: 1px solid $secondary-color;
+        border-bottom: 1px solid $secondary-color;
         font-size: 70px;
 
         &:hover {
-            background-color: rgb(107, 106, 106);
+            background-color: $secondary-color;
         }
     }
 
@@ -88,7 +91,7 @@ header {
         align-items: center;
 
         button {
-            background-color: rgb(107, 106, 106);
+            background-color: $secondary-color;
             color: white;
             padding: 12px;
             border-radius: 20px;

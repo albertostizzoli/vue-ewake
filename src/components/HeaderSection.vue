@@ -7,7 +7,6 @@
                 </div>
             </div>
         </div>
-
     </header>
 </template>
 
@@ -18,10 +17,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     button {
         background-color: rgb(64, 63, 63);
@@ -29,5 +24,4 @@ header {
         border-radius: 15px;
         color: white;
     }
-}
 </style>

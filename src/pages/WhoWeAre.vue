@@ -158,6 +158,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@use '../assets/styles/partials/variables' as *;
+
 /*---- CHI SIAMO---- */
 .together {
     position: relative;
@@ -198,7 +201,7 @@ export default {
     }
 
     button {
-        background-color: rgb(107, 106, 106);
+        background-color: $secondary-color;
         color: white;
         padding: 10px;
         border-radius: 15px;
@@ -270,7 +273,7 @@ export default {
     color: white;
 
     span button {
-        background-color: rgb(90, 239, 116);
+        background-color: $primary-color;
         color: black;
         padding: 15px;
         border-radius: 20px;
@@ -299,8 +302,8 @@ export default {
 
     ul li {
         list-style-type: none;
-        border-top: 1px solid grey;
-        border-bottom: 1px solid grey;
+        border-top: 1px solid $secondary-color;
+        border-bottom: 1px solid $secondary-color;
         padding: 10px;
         font-size: 25px;
         margin-right: 100px;
@@ -325,7 +328,7 @@ export default {
     }
 
     button {
-        background-color: rgb(107, 106, 106);
+        background-color: $secondary-color;
         color: white;
         padding: 10px;
         border-radius: 15px;
@@ -340,7 +343,7 @@ export default {
 /*---- BRAND ----- */
 .brand {
     position: relative;
-    background-color: rgb(90, 239, 116);
+    background-color: $primary-color;
     width: 100%;
     margin: auto;
     padding: 40px;
@@ -382,7 +385,7 @@ export default {
     cursor: pointer;
 
      &:hover{
-        color: rgb(90, 239, 116);
+        color: $primary-color;
     }
 }
 </style>
