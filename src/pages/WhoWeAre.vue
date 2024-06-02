@@ -132,6 +132,14 @@
             <img class="image" src="/img/2023_EWK_Agency_0259 1.png" alt="team">
         </div>
     </div>
+    <!-- brand -->
+    <div class="brand">
+        <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
+        <div class="up">
+            <h2>Creiamo qualcosa di <i class="coursive">unico</i><br> per il <strong>il tuo brand</strong></h2>
+            <button>Contattaci</button>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -317,6 +325,48 @@ export default {
     .image {
         filter: grayscale(100%);
         margin-left: 550px;
+    }
+}
+
+/*---- BRAND ----- */
+.brand {
+    position: relative;
+    background-color: rgb(90, 239, 116);
+    width: 100%;
+    margin: auto;
+}
+
+.brand img {
+    width: 100%;
+    filter: grayscale(100%);
+    opacity: 0.3;
+    display: block;
+}
+
+.up {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: left;
+    font-weight: 200;
+
+    .coursive{
+        font-weight: 400;
+    }
+}
+
+.up button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+     &:hover{
+        color: rgb(90, 239, 116);
     }
 }
 </style>
