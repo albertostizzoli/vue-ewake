@@ -9,9 +9,7 @@
     <div class="image">
         <img src="/img/Property 1=Variant2 (3).png" alt="logo-ewake">
     </div>
-    <!-- mantra -->
-    <!--<h2 class="mantra">CREA. SVEGLIA, PENSA</h2>-->
-    <CarouselWord></CarouselWord>
+        <CarouselWord></CarouselWord>
     <div class="marca">
         <div class="image-container">
             <img src="/img/10.png" alt="10">
@@ -143,16 +141,6 @@ export default {
 .image img {
     width: 100%;
     margin-top: 100px;
-}
-
-/*---- MANTRA----- */
-
-.mantra {
-    text-align: center;
-    font-size: 100px;
-    color: white;
-    font-weight: 300;
-    margin-top: 200px;
 }
 
 .image-container {

@@ -57,8 +57,4 @@ export default defineComponent({
   justify-content: space-around;
   align-items: center;
 }
-
-.carousel__slide {
-  padding: 10px;
-}
 </style>
